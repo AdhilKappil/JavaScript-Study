@@ -1,0 +1,5 @@
+console.log("10" + 5); // Output: 105 (number to string)
+console.log("true" == true); // Output: false (bolean to string)
+console.log(!!0); // Output: false (double logical negation to boolean)
+console.log('10' * 2); // Output: 20 (string to number)
+console.log('10' - 2); // Output: 20 (string to number)
