@@ -15,3 +15,17 @@ function ErrorHandling(num1, num2){
 }
 
 ErrorHandling(10,0)
+
+
+// checking which error is comimg using instenceof
+try{
+  throw Error('new error fund')
+}catch(err){
+    if(err instanceof SyntaxError){
+        console.log('this is a syntax error');
+    }else if(err instanceof TypeError){
+        console.log('this is a type error');
+    }else{
+        console.log('it is some other type error');
+    }
+}
