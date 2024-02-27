@@ -1,3 +1,5 @@
+// longest sub string without dublicat
+
 let str = "farfahmfed";
 //out : ahmfed
 
