@@ -1,11 +1,11 @@
 // Example 1
-const foo = null ?? 'default';
-console.log(foo); // Output: 'default'
+const a = null ?? 'default';
+console.log(a); // Output: 'default'
 
 // Example 2
-const bar = undefined ?? 'default';
-console.log(bar); // Output: 'default'
+const b = undefined ?? 'default';
+console.log(b); // Output: 'default'
 
 // Example 3
-const baz = 0 ?? 'default';
-console.log(baz); // Output: 0 (since 0 is not null or undefined)
+const c = 0 ?? 'default';
+console.log(c); // Output: 0 (since 0 is not null or undefined)

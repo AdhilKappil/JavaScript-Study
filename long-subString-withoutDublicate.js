@@ -1,27 +1,17 @@
-// longest sub string without dublicat
+const str = "this is a pleasent day wednesday"
 
-let str = "farfahmfed";
-//out : ahmfed
+const arr = str.split(' ')
 
-let arr = [];
-let res = [];
+let count = arr.map((val)=>val.length)
 
-for (let i = 0; i < str.length; i++) {
-  for (let j = i; j < str.length; j++) {
-    if (!arr.includes(str[j])){
-      arr.push(str[j]);
-    } else {
-      break
-    }
-  }
-//   console.log(arr);
-  if (arr.length > res.length) {
-    res = [];
-    res = [...arr];
-    arr = []
-    console.log(res);
-  }
-  arr = []
-}
 
-console.log(res.join(""));
+const max = Math.max(...count.filter((val)=>val%2===0))
+
+const res = count.indexOf(max)
+
+console.log(arr[res]);
+
+
+
+ 
+

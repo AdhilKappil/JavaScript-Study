@@ -1,12 +1,13 @@
 // function curriying
 function currying(x){
     return function(y){
-        return x + y
+        console.log(x+y);
     }
 }
 
-let add = currying(5);
-console.log(add(10));
+currying(10)(10)
+// let add = currying(5);
+// add(10);
 
 
 

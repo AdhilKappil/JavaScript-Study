@@ -1,25 +1,18 @@
-let str = "farfahmfed";
-//out : ahmfed
 
-let arr = [];
-let res = [];
+function fibonacci(n, memo={}){
 
-for (let i = 0; i < str.length; i++) {
-  for (let j = i; j < str.length; j++) {
-    if (!arr.includes(str[j])){
-      arr.push(str[j]);
-    } else {
-      break
-    }
+  if(n in memo){
+    return memo[n]
   }
-//   console.log(arr);
-  if (arr.length > res.length) {
-    res = [];
-    res = [...arr];
-    arr = []
-    console.log(res);
+
+  if(n<=2){
+    return 1
   }
-  arr = []
+
+  const res = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+  memo[n]=res
+  return res
+
 }
 
-console.log(res.join(""));
+console.log(fibonacci(7));
