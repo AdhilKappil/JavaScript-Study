@@ -1,18 +1,9 @@
 
-function fibonacci(n, memo={}){
 
-  if(n in memo){
-    return memo[n]
-  }
+console.log('Start');
 
-  if(n<=2){
-    return 1
-  }
+setImmediate(() => {
+  console.log('Callback executed');
+});
 
-  const res = fibonacci(n-1, memo) + fibonacci(n-2, memo)
-  memo[n]=res
-  return res
-
-}
-
-console.log(fibonacci(7));
+console.log('End');
