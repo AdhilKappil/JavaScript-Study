@@ -11,6 +11,8 @@ const res = count.indexOf(max)
 
 console.log(arr[res]);
 
+// clalculating large even string length 
+
 
 
  

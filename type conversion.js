@@ -32,3 +32,7 @@ console.log(null * 1);       // Result: 0
 console.log(null / 1);       // Result: 0
 console.log(null + 2);       // Result: 2
 console.log(null - 1);       // Result: -1
+
+console.log(Boolean('hello')); // true
+console.log(Boolean('')); // false empty string 
+console.log(Boolean(' ')); // spaces, also true (any non-empty string is true)

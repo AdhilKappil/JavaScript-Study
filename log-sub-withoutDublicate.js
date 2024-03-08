@@ -1,25 +1,41 @@
-// longest substring without reapeting value
+// // longest substring without reapeting value
 let str = "farfahmfed";
-//out : ahmfed
+// //out : ahmfed
 
-let arr = '';
-let res = '';
+let res = ''
 
-for (let i = 0; i < str.length; i++) {
-  for (let j = i; j < str.length; j++) {
-    if (!arr.includes(str[j])){
-      arr += str[j];
-    } else {
-      break
+for(let i=0; i<str.length; i++){
+    let cur = ''
+    for(let j=i; j<str.length; j++){
+        if(cur.includes(str[j])){
+            break
+        }
+        cur += str[j]
     }
-  }
-//   console.log(arr);
-  if (arr.length > res.length) {
-    res = '';
-    res = arr;
-    arr = ''
-  }
-  arr = ''
+    if(res.length < cur.length){
+        res = cur
+    }
 }
 
-console.log(res);
+console.log(res)
+
+
+
+// longest substring reapeting value
+// out dddd
+// let str = 'abbbaagfheefaadddddiond';
+// let longest = '';
+// let current = '';
+
+// for(let i = 0; i < str.length; i++) {
+//     if(current.includes(str[i])) {
+//         current += str[i];
+//     } else {
+//         if(current.length > longest.length) {
+//             longest = current;
+//         }
+//         current = str[i];
+//     }
+// }
+
+// console.log(longest);

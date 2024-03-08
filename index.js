@@ -1,9 +1,6 @@
+'use strict'
 
+x = 10
 
-console.log('Start');
+console.log(x)
 
-setImmediate(() => {
-  console.log('Callback executed');
-});
-
-console.log('End');

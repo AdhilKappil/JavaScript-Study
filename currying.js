@@ -1,19 +1,15 @@
 // function curriying
 function currying(x){
     return function(y){
-        console.log(x+y);
+        console.log(x*y);
     }
 }
 
-currying(10)(10)
-// let add = currying(5);
-// add(10);
+// accesing inner function in global scop useing closure
+// currying(10)(10)
 
 
 
-// Normal function
-function a (x,y){
-    return x+y
-}
+// reusability
+const multiplyTwo = currying(2)(5)
 
-console.log(a(10,20));

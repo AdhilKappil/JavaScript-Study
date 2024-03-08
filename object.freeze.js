@@ -6,6 +6,7 @@ const obj = {
   
   // Freeze the object
   Object.freeze(obj);
+  Object.seal(obj)
   
   // Attempt to modify the frozen object
   obj.prop1 = 'new value'; // This modification will be ignored

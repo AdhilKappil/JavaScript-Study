@@ -10,13 +10,6 @@ for(let val of st){
 let maxCount = 0
 let res 
 
-// for(let [key, val] of Object.entries(obj)){
-//     if(maxCount < val){
-//         maxCount = val
-//         res = key
-//     }
-// }
-
 for(let key in obj){
     if(maxCount < obj[key]){
         maxCount = obj[key]
