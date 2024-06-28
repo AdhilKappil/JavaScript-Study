@@ -12,10 +12,10 @@ const arr =[{af:9,l:3},{ad:9,l:4},{af:9,l:9},{ao:4,apo:4}];
 // }
 
 
-// simple way
+// // simple way
 // for(let entry of arr){
 //   let result = 1;
-// here we can avoid the key and we can take the values only
+// // here we can avoid the key and we can take the values only
 //   let [val1, val2] = Object.values(entry)
 //   for(let i=0; i<val2; i++){
 //     result *= val1

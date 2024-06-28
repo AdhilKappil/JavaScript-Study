@@ -11,5 +11,8 @@ function currying(x){
 
 
 // reusability
-const multiplyTwo = currying(2)(5)
+const mul = currying(10)
+mul(1) 
+mul(2) 
+mul(3) 
 
